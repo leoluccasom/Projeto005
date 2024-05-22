@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-one: #040000;
+    --color-two: #1e0c1a;
+    --color-tree: #371834;
+    --color-four: #51234e;
+    --color-five: #6b2f69;
+}
+body {
+    background: linear-gradient(80deg,var(--color-one),var(--color-tree),var(--color-five));
+    color: white;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.login{
+    padding: 15px;
+    width: 80%;
+    background-color: #51234e3a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.479);
+    margin: 10px auto;
+    text-align: center; 
+}
+h2{
+    background: linear-gradient(80deg,var(--color-one),white,var(--color-two));
+    background-clip:text;
+    color: transparent;
+    display: inline;
+    animation: title 6s linear infinite;
+}
+@keyframes title{
+    to{
+        background-position-x: 700px;
+    }
+}
+input{
+    border-radius: 10px;
+    height: 25px;
+    width: 200px;
+    padding-left: 10px;
+    border: 2px solid var(--color-one);
+    background-color: #ffffff21;
+}
+.submit{
+    cursor: pointer;
+    margin:10px 0px;
+    padding: 0;
+    width: 100px;
+    height: 28px;
+    background-color: white;
+    transition: all 500ms ease-in-out;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+img{
+    margin-top: 10px;
+    cursor: pointer;
+    width: 24px;
+}
+.content{
+    margin: 0 auto;
+    width: 90%;
+}
+h1{
+    text-align: center;
+}
+p{
+    line-height: 25px;
+}
+.button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+button{
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: white;
+    height: 32px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    transition: all 500ms ease-in-out;
+}
+button:hover, .submit:hover{
+    background-color: #040000;
+    color: white;
+    border: 1px solid white;
+    
+}
+@media (min-width:700px){
+    main{
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
